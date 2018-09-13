@@ -51,12 +51,12 @@ class CompanynamespiderSpider(scrapy.Spider):
         if spans:
             for span in spans:
                 companyurl='https:'+(span.a)['href']
-                # print(city)
                 yield Request(companyurl, callback=self.get_company_detail, meta={'city': city, })
 
     def get_company_detail(self,response):
-        companyNameItem=CompanyNameItem()
         city = response.meta['city']
+        companyNameItem=CompanyNameItem()
+
         html = BeautifulSoup(response.text, 'lxml')
         name=html.find(class_='businessName fl').string
         companyNameItem['city']=city
