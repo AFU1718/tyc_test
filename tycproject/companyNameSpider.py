@@ -39,7 +39,7 @@ class CompanynamespiderSpider(scrapy.Spider):
     def get_city(self,response):
         city = response.meta['city']
         cityurl = response.meta['cityurl']
-        for i in range(1,1000):
+        for i in range(1,100):
             cityurl_page=cityurl+'pn'+str(i)
             yield Request(cityurl_page, callback=self.get_company, meta={'city': city,})
 
@@ -51,6 +51,7 @@ class CompanynamespiderSpider(scrapy.Spider):
         if spans:
             for span in spans:
                 companyurl='https:'+(span.a)['href']
+                # print(city)
                 yield Request(companyurl, callback=self.get_company_detail, meta={'city': city, })
 
     def get_company_detail(self,response):
