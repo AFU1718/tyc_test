@@ -8,7 +8,7 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-import random
+
 BOT_NAME = 'tycproject'
 
 SPIDER_MODULES = ['tycproject.spiders']
@@ -90,8 +90,9 @@ COOKIES_ENABLED = False
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-DOWNLOAD_DELAY = 3
-USER_AGENTS  = [
+DOWNLOAD_DELAY = 1
+USER_AGENT ="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"
+USER_AGENTS = [
         "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 "
         "(KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
         "Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 "
@@ -127,12 +128,17 @@ USER_AGENTS  = [
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 "
         "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
         "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 "
-        "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
+        "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24",
     ]
+DEFAULT_REQUEST_HEADERS = {
+    'accept': 'image/webp,*/*;q=0.8',
+    'accept-language': 'zh-CN,zh;q=0.8',
+    'user-agent': 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+}
 
 MONGO_HOST = '119.23.241.65'  # 主机IP
 MONGO_PORT = 27017  # 端口号
-MONGO_DB = "tyc"  # 库名
-MONGO_COLL = "companyName"  # collection名
+MONGO_DB = 'tyc'  # 库名
+MONGO_COLL = 'companyName'  # collection名
 MONGO_USER = "zhangsan"
 MONGO_PSW = "123456"

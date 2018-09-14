@@ -10,12 +10,14 @@ from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
 
 class RandomUserAgent(UserAgentMiddleware):
 
+
     def __init__(self, user_agent=''):
         self.user_agent = user_agent
 
     @classmethod
     def from_crawler(cls, crawler):
-        o=cls(random.choice(crawler.settings.getlist('USER_AGENTS')))
+        o=cls(random.choice(crawler.settings.getlist['USER_AGENTS']))
+        # o = cls(crawler.settings.get['USER_AGENT'])
         crawler.signals.connect(o.spider_opened, signal=signals.spider_opened)
         return o
 

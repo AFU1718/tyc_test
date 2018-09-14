@@ -10,10 +10,10 @@ class CompanynamespiderSpider(scrapy.Spider):
     allowed_domains = ['qy.58.com']
     custom_settings = {
         'DOWNLOAD_DELAY': 1,
-        'DOWNLOADER_MIDDLEWARES':{
-            'tycproject.middlewares.RandomUserAgent': 510,
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None
-        },
+        # 'DOWNLOADER_MIDDLEWARES':{
+        #     'tycproject.middlewares.RandomUserAgent': 510,
+        #     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None
+        # },
         'ITEM_PIPELINES':{
             'tycproject.mongodbPipelines.MongodbPipeline':1,
         }
