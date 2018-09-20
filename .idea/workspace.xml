@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b6a7316-79f4-49e5-9f5b-22babdfbcaec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/tycproject/b2b168Spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tycproject/huangye88Spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tycproject/pe168Spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tycproject/testTycSpider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tycproject/youboySpider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tycproject/companyNameSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/qiye58Spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tycproject/tycproject/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/tycproject/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tycproject/tycproject/mongodbPipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/tycproject/mongodbPipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tycproject/tycproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/tycproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tycproject/b2b168Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/b2b168Spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tycproject/huangye88Spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tycproject/huangye88Spider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,7 +21,7 @@
       <file leaf-file-name="qiye58Spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/qiye58Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-494">
+            <state relative-caret-position="-437">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
@@ -37,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="youboySpider.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="youboySpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/youboySpider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-677">
@@ -52,7 +45,7 @@
       <file leaf-file-name="shop99114Spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/shop99114Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-209">
+            <state relative-caret-position="190">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
@@ -69,8 +62,8 @@
       <file leaf-file-name="huangye88Spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/huangye88Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-646">
-              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+            <state relative-caret-position="1216">
+              <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -81,7 +74,7 @@
       <file leaf-file-name="pe168Spider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/pe168Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
+            <state relative-caret-position="-893">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
@@ -93,7 +86,7 @@
       <file leaf-file-name="qiye56yeSpider.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tycproject/qiye56yeSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
+            <state relative-caret-position="-209">
               <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
@@ -102,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b2b168Spider.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="b2b168Spider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tycproject/b2b168Spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-323">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="1368">
+              <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -180,13 +173,13 @@
         <option value="$PROJECT_DIR$/tycproject/testTycSpider.py" />
         <option value="$PROJECT_DIR$/tycproject/tycSpider.py" />
         <option value="$PROJECT_DIR$/tycproject/tycproject/middlewares.py" />
-        <option value="$PROJECT_DIR$/tycproject/b2b168Spider.py" />
-        <option value="$PROJECT_DIR$/tycproject/huangye88Spider.py" />
         <option value="$PROJECT_DIR$/tycproject/pe168Spider.py" />
         <option value="$PROJECT_DIR$/tycproject/qiye56yeSpider.py" />
         <option value="$PROJECT_DIR$/tycproject/qiye58Spider.py" />
         <option value="$PROJECT_DIR$/tycproject/shop99114Spider.py" />
         <option value="$PROJECT_DIR$/tycproject/youboySpider.py" />
+        <option value="$PROJECT_DIR$/tycproject/b2b168Spider.py" />
+        <option value="$PROJECT_DIR$/tycproject/huangye88Spider.py" />
       </list>
     </option>
   </component>
@@ -345,7 +338,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536888356935</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="初始化6">
+      <created>1537431681013</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537431681013</updated>
+    </task>
+    <task id="LOCAL-00008" summary="初始化7">
+      <created>1537434058667</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537434058667</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +364,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.6859504" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.3289256" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38118812" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4969697" visible="true" weight="0.120661154" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4969697" visible="true" weight="0.0" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32980332" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -409,7 +416,9 @@
     <MESSAGE value="初始化2" />
     <MESSAGE value="初始化4" />
     <MESSAGE value="初始化5" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化5" />
+    <MESSAGE value="初始化6" />
+    <MESSAGE value="初始化7" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -642,23 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tycproject/cookieService.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tycproject/b2b168Spider.py">
+    <entry file="file://$PROJECT_DIR$/tycproject/youboySpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
+        <state relative-caret-position="-677">
           <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tycproject/huangye88Spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-646">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
@@ -667,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tycproject/pe168Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
+        <state relative-caret-position="-893">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
@@ -677,7 +673,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tycproject/qiye56yeSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
+        <state relative-caret-position="-209">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
@@ -687,7 +683,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tycproject/qiye58Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
+        <state relative-caret-position="-437">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
@@ -697,7 +693,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tycproject/shop99114Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
+        <state relative-caret-position="190">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
@@ -705,10 +701,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tycproject/youboySpider.py">
+    <entry file="file://$PROJECT_DIR$/tycproject/cookieService.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tycproject/huangye88Spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-677">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="1216">
+          <caret line="70" column="33" lean-forward="true" selection-start-line="70" selection-start-column="33" selection-end-line="70" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tycproject/b2b168Spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1368">
+          <caret line="72" column="42" lean-forward="true" selection-start-line="72" selection-start-column="42" selection-end-line="72" selection-end-column="42" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

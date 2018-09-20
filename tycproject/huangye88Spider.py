@@ -3,9 +3,10 @@ import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request
 from tycproject.items import CompanyNameItem
-
+import logging
 
 class Huangye88Spider(scrapy.Spider):
+    logger = logging.getLogger(__name__)
     name = 'huangye88Spider'
     custom_settings = {
         'DOWNLOAD_DELAY': 0.1,
@@ -66,7 +67,7 @@ class Huangye88Spider(scrapy.Spider):
             companyNameItem = CompanyNameItem()
             companyNameItem['city'] = city
             companyNameItem['name'] = name
-            print(name)
+            self.logger.info(name)
             yield companyNameItem
 
 
