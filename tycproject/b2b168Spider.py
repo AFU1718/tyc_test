@@ -43,11 +43,21 @@ class B2b168Spider(scrapy.Spider):
             dt=cityelement.find('dt')
             city=dt.a.string[:-2]
             countyelement =cityelement.find('dd')
+
             countyurl=url+countyelement.a['href']
             yield Request(countyurl, callback=self.get_company, meta={'city': city})
 
-
     def get_company(self,response):
+        city = response.meta['city']
+        html = BeautifulSoup(response.text, 'lxml')
+        page=int(html.find(class_='pages').text.replace(' ', '').split('共')[1].split('页')[0])
+
+        if (not page) or page == 0:
+            page = 0
+        for i in range(1,page+1):
+            yield Request(response.url+'l-'+str(i)+'.html', callback=self.get_company_detail, meta={'city': city})
+
+    def get_company_detail(self,response):
         city = response.meta['city']
         html = BeautifulSoup(response.text, 'lxml')
         list=html.find(class_='list-right').find(class_='list')
