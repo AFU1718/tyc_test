@@ -5,18 +5,18 @@ from scrapy.http import Request
 from tycproject.items import CompanyNameItem
 
 
-class CompanynamespiderSpider(scrapy.Spider):
-    name = 'companyNameSpider'
-    allowed_domains = ['qy.58.com']
+class Qiye58Spider(scrapy.Spider):
+    name = 'qiye58Spider'
     custom_settings = {
-        'DOWNLOAD_DELAY': 1,
+        'DOWNLOAD_DELAY': 0.1,
         # 'DOWNLOADER_MIDDLEWARES':{
         #     'tycproject.middlewares.RandomUserAgent': 510,
         #     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None
         # },
         'ITEM_PIPELINES':{
-            'tycproject.mongodbPipelines.MongodbPipeline':1,
-        }
+            'tycproject.mongodbPipelines.MongodbPipeline_Qiye58':300,
+        },
+
     }
 
 
@@ -34,14 +34,14 @@ class CompanynamespiderSpider(scrapy.Spider):
             for cityelement in a:
                 cityurl='https:'+cityelement['href']
                 city=cityelement.string
-                yield Request(cityurl, callback=self.get_city,meta={'city':city,'cityurl':cityurl})
+                yield Request(cityurl, callback=self.get_city,meta={'city':city})
 
     def get_city(self,response):
         city = response.meta['city']
-        cityurl = response.meta['cityurl']
-        for i in range(1,100):
+        cityurl = response.url
+        for i in range(1,1001):
             cityurl_page=cityurl+'pn'+str(i)
-            yield Request(cityurl_page, callback=self.get_company, meta={'city': city,})
+            yield Request(cityurl_page, callback=self.get_company, meta={'city': city})
 
     def get_company(self,response):
         city = response.meta['city']
@@ -51,7 +51,15 @@ class CompanynamespiderSpider(scrapy.Spider):
         if spans:
             for span in spans:
                 companyurl='https:'+(span.a)['href']
-                yield Request(companyurl, callback=self.get_company_detail, meta={'city': city, })
+                name=span.a.string
+                if name[-2]=='.':
+                    yield Request(companyurl, callback=self.get_company_detail, meta={'city': city})
+                else:
+                    companyNameItem = CompanyNameItem()
+                    companyNameItem['city'] = city
+                    companyNameItem['name'] = span.a.string
+                    print(span.a.string)
+                    yield companyNameItem
 
     def get_company_detail(self,response):
         city = response.meta['city']
@@ -61,7 +69,8 @@ class CompanynamespiderSpider(scrapy.Spider):
         name=html.find(class_='businessName fl').string
         companyNameItem['city']=city
         companyNameItem['name'] = name
-        return companyNameItem
+        print(name)
+        yield companyNameItem
 
 
 

@@ -90,7 +90,7 @@ COOKIES_ENABLED = False
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-DOWNLOAD_DELAY = 1
+# DOWNLOAD_DELAY = 1
 USER_AGENT ="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"
 USER_AGENTS = [
         "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 "
@@ -136,9 +136,15 @@ DEFAULT_REQUEST_HEADERS = {
     'user-agent': 'Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
 }
 
-MONGO_HOST = '119.23.241.65'  # 主机IP
-MONGO_PORT = 27017  # 端口号
-MONGO_DB = 'tyc'  # 库名
-MONGO_COLL = 'companyName'  # collection名
+MONGO_HOST = '119.23.241.65'
+MONGO_PORT = 27017
+MONGO_DB = 'tyc'
+MONGO_COLL = 'testtest'
 MONGO_USER = "zhangsan"
 MONGO_PSW = "123456"
+
+#selenium参数
+SELENIUM_TIMEOUT = 25
+LOAD_IMAGE = True
+WINDOW_HEIGHT = 900
+WINDOW_WIDTH = 900
