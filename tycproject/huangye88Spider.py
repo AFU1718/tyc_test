@@ -17,6 +17,8 @@ class Huangye88Spider(scrapy.Spider):
         'ITEM_PIPELINES':{
                 'tycproject.mongodbPipelines.MongodbPipeline_Huangye88':300,
         },
+        'LOG_LEVEL': 'DEBUG',
+        'LOG_FILE': 'log/log_huangye88'
 
     }
 
@@ -67,7 +69,6 @@ class Huangye88Spider(scrapy.Spider):
             companyNameItem = CompanyNameItem()
             companyNameItem['city'] = city
             companyNameItem['name'] = name
-            self.logger.info(name)
             yield companyNameItem
 
 

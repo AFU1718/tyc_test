@@ -3,9 +3,11 @@ import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request
 from tycproject.items import CompanyNameItem
+import logging
 
 
 class YouboySpider(scrapy.Spider):
+    logger = logging.getLogger(__name__)
     name = 'youboySpider'
     custom_settings = {
         'DOWNLOAD_DELAY': 0.1,
@@ -16,6 +18,8 @@ class YouboySpider(scrapy.Spider):
         'ITEM_PIPELINES':{
             'tycproject.mongodbPipelines.MongodbPipeline_Youboy':300,
         },
+        'LOG_LEVEL': 'DEBUG',
+        'LOG_FILE': 'log/log_youboy'
 
     }
     provincedict = {'1': '广东',
@@ -64,7 +68,6 @@ class YouboySpider(scrapy.Spider):
         dqscontit = html.find_all(class_='dqscontit')
         for nameelement in dqscontit:
             name=nameelement.a.string
-            print(name)
             companyNameItem = CompanyNameItem()
             companyNameItem['city'] = province
             companyNameItem['name'] = name

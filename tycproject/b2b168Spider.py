@@ -19,7 +19,6 @@ class B2b168Spider(scrapy.Spider):
                 'tycproject.mongodbPipelines.MongodbPipeline_B2b168':300,
         },
         'LOG_LEVEL' : 'DEBUG',
-
         'LOG_FILE' : 'log/log_b2b168'
 
     }
@@ -72,6 +71,5 @@ class B2b168Spider(scrapy.Spider):
             companyNameItem = CompanyNameItem()
             companyNameItem['city'] = city
             companyNameItem['name'] = name
-            self.logger.info(name)
             yield companyNameItem
 

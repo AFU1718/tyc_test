@@ -3,9 +3,10 @@ import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request
 from tycproject.items import CompanyNameItem
-
+import logging
 
 class YouboySpider(scrapy.Spider):
+    logger = logging.getLogger(__name__)
     name = 'pe168Spider'
     custom_settings = {
         'DOWNLOAD_DELAY': 0.1,
@@ -16,6 +17,8 @@ class YouboySpider(scrapy.Spider):
         'ITEM_PIPELINES':{
             'tycproject.mongodbPipelines.MongodbPipeline_Pe168':300,
         },
+        'LOG_LEVEL': 'DEBUG',
+        'LOG_FILE': 'log/log_pe168'
 
     }
 
@@ -83,7 +86,6 @@ class YouboySpider(scrapy.Spider):
             companyNameItem = CompanyNameItem()
             companyNameItem['city'] = city
             companyNameItem['name'] = name
-            print(name)
             yield companyNameItem
 
 

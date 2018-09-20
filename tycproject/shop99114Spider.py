@@ -3,9 +3,10 @@ import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request
 from tycproject.items import CompanyNameItem
-
+import logging
 
 class Shop99114Spider(scrapy.Spider):
+    logger = logging.getLogger(__name__)
     name = 'shop99114Spider'
     custom_settings = {
         'DOWNLOAD_DELAY': 0.1,
@@ -16,7 +17,8 @@ class Shop99114Spider(scrapy.Spider):
         'ITEM_PIPELINES':{
             'tycproject.mongodbPipelines.MongodbPipeline_Shop99114':300,
         },
-
+        'LOG_LEVEL': 'DEBUG',
+        'LOG_FILE': 'log/log_shop99114'
     }
 
 
@@ -56,7 +58,6 @@ class Shop99114Spider(scrapy.Spider):
                     companyNameItem = CompanyNameItem()
                     companyNameItem['city'] = city
                     companyNameItem['name'] = name
-                    print(name)
                     yield companyNameItem
 
 
